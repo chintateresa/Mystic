@@ -1,0 +1,453 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.black-transpernate{
+ background-color: #000000ac;
+}
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6f61;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #ff6f61;
+}
+
+.btn-cta {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #e65b54;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+.cart-icon img {
+    height: 25px;
+}
+
+.hero-section {
+    background: url('assets\ furniture/bgimg.png') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.173);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-explore {
+    background-color: #ff6f61;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-explore:hover {
+    background-color: #e65b54;
+}
+.categories-section {
+    text-align: center;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.category-img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.category-card:hover .category-img {
+    transform: scale(1.1);
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.category-card:hover .category-overlay {
+    opacity: 1;
+}
+
+.category-overlay h3 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.category-overlay a {
+    font-weight: 600;
+    color: #000;
+    background: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.featured-products {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.price {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.star-rating {
+    color: #f39c12;
+    margin: 5px 0;
+}
+
+.inspirational-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.masonry-gallery {
+    column-count: 3;
+    column-gap: 1.5rem;
+}
+
+.inspiration-item {
+    background: #ffffff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    break-inside: avoid;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.inspiration-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.inspiration-img {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.inspiration-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.inspiration-item:hover .inspiration-overlay {
+    transform: translateY(0);
+}
+.customer-favorites-section {
+    background-color: #343a40; /* Contrasting background */
+    color: #ffffff; /* Text color for contrast */
+    padding: 30px 0;
+    border-radius: 10px;
+}
+
+.favorite-item {
+    background: #495057;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.favorite-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.favorite-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.favorite-item h5 {
+    margin-top: 15px;
+}
+
+.favorite-item .price {
+    font-weight: bold;
+}
+
+.favorite-item .testimonial {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+.about-us {
+    background-color: #fdf7f1; /* Soft warm tone for a personal touch */
+    padding: 30px 0;
+}
+
+.brand-story {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.mission-vision .icon {
+    font-size: 1.5rem;
+    color: #d4a373; /* Warm tone matching brand colors */
+}
+
+.team {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h5 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.team-member .position {
+    font-size: 0.9rem;
+    color: #6c757d; /* Light gray for position text */
+}
+.customer-testimonials {
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    padding: 50px 0;
+}
+
+.testimonial-item {
+    background: #ffffff;
+    border-radius: 15px; /* Rounded corners for personal touch */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.testimonial-item img {
+    object-fit: cover;
+    border: 3px solid #d4a373; /* Border to make the image stand out */
+}
+
+.testimonial-comment {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.customer-name {
+    font-weight: 600;
+}
+
+.rating {
+    font-size: 1.2rem;
+    color: #ffbf00; /* Gold color for star rating */
+}
+.newsletter-banner {
+    background-color: #6c757d; /* Dark gray background to make the section stand out */
+    padding: 50px 0;
+}
+
+.newsletter-banner h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.newsletter-banner .form-control {
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+.newsletter-banner .btn-primary {
+    background-color: #d4a373; /* Contrasting color for the Subscribe button */
+    border: none;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+}
+
+.newsletter-banner .btn-primary:hover {
+    background-color: #b4875e;
+}
+.store-locator-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.store-list {
+    font-family: Arial, sans-serif;
+}
+
+.store-item h4 {
+    font-weight: 600;
+    color: #333;
+}
+
+.store-item p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#store-map {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.footer-section {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.footer-title {
+    color: #f39c12;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #f39c12;
+}
+
+.list-inline-item a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.list-inline-item a:hover {
+    color: #f39c12;
+}
+
+.newsletter-form .form-control {
+    border-radius: 0;
+}
+
+.newsletter-form .btn {
+    border-radius: 0;
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+.newsletter-form .btn:hover {
+    background-color: #e67e22;
+    color: #ffffff;
+}

@@ -1,0 +1,144 @@
+.black-transpernate{
+    background-color: #000000ac;
+   }
+   .navbar {
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       position: sticky;
+       top: 0;
+       width: 100%;
+       z-index: 1000;
+   }
+   
+   .navbar-brand img {
+       height: 40px;
+   }
+   
+   .navbar-nav .nav-link {
+       color: #333;
+       font-weight: 600;
+       transition: color 0.3s ease;
+   }
+   
+   .navbar-nav .nav-link:hover {
+       color: #ff6f61;
+   }
+   
+   .search-bar {
+       position: relative;
+   }
+   
+   .search-bar input {
+       padding: 5px 10px;
+       border-radius: 20px;
+       border: 1px solid #ddd;
+       outline: none;
+   }
+   
+   .search-bar input:focus {
+       border-color: #ff6f61;
+   }
+   
+   .btn-cta {
+       background-color: #ff6f61;
+       color: #fff;
+       border: none;
+       padding: 10px 20px;
+       font-weight: 600;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+   }
+   
+   .btn-cta:hover {
+       background-color: #e65b54;
+   }
+   
+   .cart-icon {
+       cursor: pointer;
+   }
+   
+   .cart-icon img {
+       height: 25px;
+   }
+
+.collection-item {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+}
+.cart-icon {
+    cursor: pointer;
+}
+
+.cart-icon img {
+    height: 25px;
+}
+
+.btn-primary {
+    background-color: #f39c12;
+    border-color: #f39c12;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+.footer-section {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.footer-title {
+    color: #f39c12;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #f39c12;
+}
+
+.list-inline-item a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.list-inline-item a:hover {
+    color: #f39c12;
+}
+
+.newsletter-form .form-control {
+    border-radius: 0;
+}
+
+.newsletter-form .btn {
+    border-radius: 0;
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+.newsletter-form .btn:hover {
+    background-color: #e67e22;
+    color: #ffffff;
+}
